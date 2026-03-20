@@ -1,0 +1,18 @@
+{
+  "name": "wallet-balance-tracker",
+  "version": "1.0.0",
+  "description": "Track SOL & SPL token balances across thousands of wallets using Mobula webhooks, portfolio API, and WebSocket streams.",
+  "scripts": {
+    "server": "bun run src/server.ts",
+    "create-webhooks": "bun run src/create-webhooks.ts",
+    "poll-balances": "bun run src/poll-balances.ts",
+    "ws-stream": "bun run src/ws-stream.ts",
+    "demo": "bun run src/demo.ts"
+  },
+  "dependencies": {
+    "mobula-sdk": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
