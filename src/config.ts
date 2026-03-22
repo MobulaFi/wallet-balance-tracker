@@ -8,7 +8,7 @@ export const WALLETS: string[] = (process.env.WALLETS || "")
   .filter(Boolean);
 
 export const MOBULA_API_BASE = "https://api.mobula.io";
-export const MOBULA_WS_URL = "wss://streams.mobula.io";
+export const MOBULA_WS_URL = "wss://api.mobula.io";
 
 // Webhook limits: max 1000 filter operations per webhook
 // Each wallet = 2 ops (from + to), so max ~450 wallets per webhook
