@@ -30,7 +30,10 @@ async function createWebhook(
 
   const res = await fetch(`${MOBULA_API_BASE}/api/1/webhook`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": MOBULA_API_KEY,
+    },
     body: JSON.stringify({
       name: `wallet-tracker-${index}`,
       chainIds: ["solana:solana"],
